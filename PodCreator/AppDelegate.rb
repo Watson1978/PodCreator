@@ -64,6 +64,7 @@ class AppDelegate
           f.puts "dependency '#{item}'"
         end
       }
+      system "open -a TextEdit '#{path}'"
     end
   end
 end
