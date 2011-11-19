@@ -1,0 +1,361 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A988D4091477DFDB00878C5C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A988D4081477DFDB00878C5C /* Cocoa.framework */; };
+		A988D40B1477DFDB00878C5C /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A988D40A1477DFDB00878C5C /* MacRuby.framework */; };
+		A988D4141477DFDB00878C5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A988D4121477DFDB00878C5C /* InfoPlist.strings */; };
+		A988D4161477DFDB00878C5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A988D4151477DFDB00878C5C /* main.m */; };
+		A988D41B1477DFDC00878C5C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A988D4191477DFDC00878C5C /* MainMenu.xib */; };
+		A988D41E1477DFDC00878C5C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D41D1477DFDC00878C5C /* rb_main.rb */; };
+		A988D4201477DFDC00878C5C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D41F1477DFDC00878C5C /* AppDelegate.rb */; };
+		A988D42A1477E2F100878C5C /* ButtonBarView.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D4291477E2F100878C5C /* ButtonBarView.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A988D40D1477DFDB00878C5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A988D3FB1477DFDB00878C5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A988D4031477DFDB00878C5C;
+			remoteInfo = PodCreator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A988D4041477DFDB00878C5C /* PodCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A988D4081477DFDB00878C5C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A988D40A1477DFDB00878C5C /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		A988D4111477DFDB00878C5C /* PodCreator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PodCreator-Info.plist"; sourceTree = "<group>"; };
+		A988D4131477DFDB00878C5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A988D4151477DFDB00878C5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A988D4171477DFDC00878C5C /* PodCreator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PodCreator-Prefix.pch"; sourceTree = "<group>"; };
+		A988D41A1477DFDC00878C5C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A988D41D1477DFDC00878C5C /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		A988D41F1477DFDC00878C5C /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		A988D4291477E2F100878C5C /* ButtonBarView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ButtonBarView.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A988D4011477DFDB00878C5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A988D4091477DFDB00878C5C /* Cocoa.framework in Frameworks */,
+				A988D40B1477DFDB00878C5C /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A988D3F91477DFDB00878C5C = {
+			isa = PBXGroup;
+			children = (
+				A988D40F1477DFDB00878C5C /* PodCreator */,
+				A988D4071477DFDB00878C5C /* Frameworks */,
+				A988D4051477DFDB00878C5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A988D4051477DFDB00878C5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A988D4041477DFDB00878C5C /* PodCreator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A988D4071477DFDB00878C5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A988D4081477DFDB00878C5C /* Cocoa.framework */,
+				A988D40A1477DFDB00878C5C /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A988D40F1477DFDB00878C5C /* PodCreator */ = {
+			isa = PBXGroup;
+			children = (
+				A988D4291477E2F100878C5C /* ButtonBarView.rb */,
+				A988D41F1477DFDC00878C5C /* AppDelegate.rb */,
+				A988D4181477DFDC00878C5C /* Resources */,
+				A988D41C1477DFDC00878C5C /* Other Sources */,
+				A988D4101477DFDB00878C5C /* Supporting Files */,
+			);
+			path = PodCreator;
+			sourceTree = "<group>";
+		};
+		A988D4101477DFDB00878C5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A988D4111477DFDB00878C5C /* PodCreator-Info.plist */,
+				A988D4121477DFDB00878C5C /* InfoPlist.strings */,
+				A988D4151477DFDB00878C5C /* main.m */,
+				A988D4171477DFDC00878C5C /* PodCreator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A988D4181477DFDC00878C5C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A988D4191477DFDC00878C5C /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A988D41C1477DFDC00878C5C /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A988D41D1477DFDC00878C5C /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		A988D40C1477DFDB00878C5C /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = A988D4261477DFDC00878C5C /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				A988D40E1477DFDB00878C5C /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		A988D4031477DFDB00878C5C /* PodCreator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A988D4231477DFDC00878C5C /* Build configuration list for PBXNativeTarget "PodCreator" */;
+			buildPhases = (
+				A988D4001477DFDB00878C5C /* Sources */,
+				A988D4011477DFDB00878C5C /* Frameworks */,
+				A988D4021477DFDB00878C5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PodCreator;
+			productName = PodCreator;
+			productReference = A988D4041477DFDB00878C5C /* PodCreator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A988D3FB1477DFDB00878C5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A988D3FE1477DFDB00878C5C /* Build configuration list for PBXProject "PodCreator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A988D3F91477DFDB00878C5C;
+			productRefGroup = A988D4051477DFDB00878C5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A988D4031477DFDB00878C5C /* PodCreator */,
+				A988D40C1477DFDB00878C5C /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A988D4021477DFDB00878C5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A988D4141477DFDB00878C5C /* InfoPlist.strings in Resources */,
+				A988D41B1477DFDC00878C5C /* MainMenu.xib in Resources */,
+				A988D41E1477DFDC00878C5C /* rb_main.rb in Resources */,
+				A988D4201477DFDC00878C5C /* AppDelegate.rb in Resources */,
+				A988D42A1477E2F100878C5C /* ButtonBarView.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A988D4001477DFDB00878C5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A988D4161477DFDB00878C5C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A988D40E1477DFDB00878C5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A988D4031477DFDB00878C5C /* PodCreator */;
+			targetProxy = A988D40D1477DFDB00878C5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A988D4121477DFDB00878C5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A988D4131477DFDB00878C5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A988D4191477DFDC00878C5C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A988D41A1477DFDC00878C5C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A988D4211477DFDC00878C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A988D4221477DFDC00878C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A988D4241477DFDC00878C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PodCreator/PodCreator-Prefix.pch";
+				INFOPLIST_FILE = "PodCreator/PodCreator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A988D4251477DFDC00878C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(DEVELOPER_FRAMEWORKS_DIR)\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PodCreator/PodCreator-Prefix.pch";
+				INFOPLIST_FILE = "PodCreator/PodCreator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A988D4271477DFDC00878C5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A988D4281477DFDC00878C5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A988D3FE1477DFDB00878C5C /* Build configuration list for PBXProject "PodCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A988D4211477DFDC00878C5C /* Debug */,
+				A988D4221477DFDC00878C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A988D4231477DFDC00878C5C /* Build configuration list for PBXNativeTarget "PodCreator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A988D4241477DFDC00878C5C /* Debug */,
+				A988D4251477DFDC00878C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A988D4261477DFDC00878C5C /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A988D4271477DFDC00878C5C /* Debug */,
+				A988D4281477DFDC00878C5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A988D3FB1477DFDB00878C5C /* Project object */;
+}
