@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90E74BB1478A7CC00493C4C /* PodList.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90E74B91478A7CC00493C4C /* PodList.xib */; };
+		A90E74BE1478A7F700493C4C /* PodList.rb in Resources */ = {isa = PBXBuildFile; fileRef = A90E74BD1478A7F700493C4C /* PodList.rb */; };
 		A988D4091477DFDB00878C5C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A988D4081477DFDB00878C5C /* Cocoa.framework */; };
 		A988D40B1477DFDB00878C5C /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A988D40A1477DFDB00878C5C /* MacRuby.framework */; };
 		A988D4141477DFDB00878C5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A988D4121477DFDB00878C5C /* InfoPlist.strings */; };
@@ -28,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A90E74BA1478A7CC00493C4C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PodList.xib; sourceTree = "<group>"; };
+		A90E74BD1478A7F700493C4C /* PodList.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PodList.rb; sourceTree = "<group>"; };
 		A988D4041477DFDB00878C5C /* PodCreator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PodCreator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A988D4081477DFDB00878C5C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		A988D40A1477DFDB00878C5C /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
@@ -85,6 +89,7 @@
 			children = (
 				A988D4291477E2F100878C5C /* ButtonBarView.rb */,
 				A988D41F1477DFDC00878C5C /* AppDelegate.rb */,
+				A90E74BD1478A7F700493C4C /* PodList.rb */,
 				A988D4181477DFDC00878C5C /* Resources */,
 				A988D41C1477DFDC00878C5C /* Other Sources */,
 				A988D4101477DFDB00878C5C /* Supporting Files */,
@@ -107,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				A988D4191477DFDC00878C5C /* MainMenu.xib */,
+				A90E74B91478A7CC00493C4C /* PodList.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -192,6 +198,8 @@
 				A988D41E1477DFDC00878C5C /* rb_main.rb in Resources */,
 				A988D4201477DFDC00878C5C /* AppDelegate.rb in Resources */,
 				A988D42A1477E2F100878C5C /* ButtonBarView.rb in Resources */,
+				A90E74BB1478A7CC00493C4C /* PodList.xib in Resources */,
+				A90E74BE1478A7F700493C4C /* PodList.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +225,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		A90E74B91478A7CC00493C4C /* PodList.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90E74BA1478A7CC00493C4C /* en */,
+			);
+			name = PodList.xib;
+			sourceTree = "<group>";
+		};
 		A988D4121477DFDB00878C5C /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,6 +362,7 @@
 				A988D4251477DFDC00878C5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A988D4261477DFDC00878C5C /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -354,6 +371,7 @@
 				A988D4281477DFDC00878C5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

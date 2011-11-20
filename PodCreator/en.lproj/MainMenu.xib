@@ -1328,7 +1328,7 @@
 			<object class="NSWindowTemplate" id="972006081">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{335, 390}, {270, 336}}</string>
+				<string key="NSWindowRect">{{335, 390}, {398, 336}}</string>
 				<int key="NSWTFlags">1954021376</int>
 				<string key="NSWindowTitle">PodCreator</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1438,7 +1438,7 @@
 						</object>
 						<object class="NSScrollView" id="950568612">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">4364</int>
+							<int key="NSvFlags">4374</int>
 							<object class="NSMutableArray" key="NSSubviews">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSClipView" id="831709274">
@@ -1449,16 +1449,16 @@
 										<object class="NSTableView" id="560573976">
 											<reference key="NSNextResponder" ref="831709274"/>
 											<int key="NSvFlags">4352</int>
-											<string key="NSFrameSize">{238, 176}</string>
+											<string key="NSFrameSize">{361, 176}</string>
 											<reference key="NSSuperview" ref="831709274"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="1026024532"/>
+											<reference key="NSNextKeyView" ref="451024722"/>
 											<string key="NSReuseIdentifierKey">_NS:1828</string>
 											<bool key="NSEnabled">YES</bool>
 											<object class="NSTableHeaderView" key="NSHeaderView" id="862756960">
 												<reference key="NSNextResponder" ref="451024722"/>
 												<int key="NSvFlags">256</int>
-												<string key="NSFrameSize">{238, 17}</string>
+												<string key="NSFrameSize">{361, 17}</string>
 												<reference key="NSSuperview" ref="451024722"/>
 												<reference key="NSWindow"/>
 												<reference key="NSNextKeyView" ref="831709274"/>
@@ -1474,7 +1474,7 @@
 											<object class="NSMutableArray" key="NSTableColumns">
 												<bool key="EncodedWithXMLCoder">YES</bool>
 												<object class="NSTableColumn" id="680340439">
-													<double key="NSWidth">235</double>
+													<double key="NSWidth">358</double>
 													<double key="NSMinWidth">40</double>
 													<double key="NSMaxWidth">1000</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -1544,7 +1544,7 @@
 											<int key="NSTableViewGroupRowStyle">1</int>
 										</object>
 									</object>
-									<string key="NSFrame">{{1, 17}, {238, 176}}</string>
+									<string key="NSFrame">{{1, 17}, {361, 176}}</string>
 									<reference key="NSSuperview" ref="950568612"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="560573976"/>
@@ -1586,7 +1586,7 @@
 										<bool key="EncodedWithXMLCoder">YES</bool>
 										<reference ref="862756960"/>
 									</object>
-									<string key="NSFrame">{{1, 0}, {238, 17}}</string>
+									<string key="NSFrame">{{1, 0}, {361, 17}}</string>
 									<reference key="NSSuperview" ref="950568612"/>
 									<reference key="NSWindow"/>
 									<reference key="NSNextKeyView" ref="862756960"/>
@@ -1596,10 +1596,10 @@
 									<int key="NScvFlags">4</int>
 								</object>
 							</object>
-							<string key="NSFrame">{{15, 89}, {240, 194}}</string>
+							<string key="NSFrame">{{15, 89}, {363, 194}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="451024722"/>
+							<reference key="NSNextKeyView" ref="831709274"/>
 							<string key="NSReuseIdentifierKey">_NS:1824</string>
 							<int key="NSsFlags">133682</int>
 							<reference key="NSVScroller" ref="1026024532"/>
@@ -1610,11 +1610,10 @@
 						</object>
 						<object class="NSButton" id="123106981">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{15, 19}, {240, 33}}</string>
+							<int key="NSvFlags">294</int>
+							<string key="NSFrame">{{15, 19}, {363, 33}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:2466</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="551096043">
@@ -1634,7 +1633,7 @@
 						</object>
 						<object class="NSCustomView" id="231858982">
 							<reference key="NSNextResponder" ref="439893737"/>
-							<int key="NSvFlags">268</int>
+							<int key="NSvFlags">262</int>
 							<object class="NSMutableArray" key="NSSubviews">
 								<bool key="EncodedWithXMLCoder">YES</bool>
 								<object class="NSButton" id="60923220">
@@ -1694,7 +1693,7 @@
 									</object>
 								</object>
 							</object>
-							<string key="NSFrame">{{15, 70}, {240, 20}}</string>
+							<string key="NSFrame">{{15, 70}, {363, 20}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="628720325"/>
@@ -1702,7 +1701,7 @@
 							<string key="NSClassName">ButtonBarView</string>
 						</object>
 					</object>
-					<string key="NSFrameSize">{270, 336}</string>
+					<string key="NSFrameSize">{398, 336}</string>
 					<reference key="NSSuperview"/>
 					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="1028055377"/>
@@ -2509,14 +2508,6 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
-						<string key="label">add:</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="628720325"/>
-					</object>
-					<int key="connectionID">582</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
 						<string key="label">remove:</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="60923220"/>
@@ -2530,6 +2521,14 @@
 						<reference key="destination" ref="123106981"/>
 					</object>
 					<int key="connectionID">585</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showList:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="628720325"/>
+					</object>
+					<int key="connectionID">590</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -4170,7 +4169,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">585</int>
+			<int key="maxID">590</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -4182,9 +4181,9 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>add:</string>
 							<string>create:</string>
 							<string>remove:</string>
+							<string>showList:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -4197,22 +4196,22 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>add:</string>
 							<string>create:</string>
 							<string>remove:</string>
+							<string>showList:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBActionInfo">
-								<string key="name">add:</string>
-								<string key="candidateClassName">id</string>
-							</object>
 							<object class="IBActionInfo">
 								<string key="name">create:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
 								<string key="name">remove:</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBActionInfo">
+								<string key="name">showList:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>

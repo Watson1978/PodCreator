@@ -8,41 +8,47 @@ class AppDelegate
   attr_accessor :platformButton
   attr_accessor :addButton, :removeButton, :createButton
   attr_accessor :tableView
-  
+
   PLATFORM = {'iOS' => ":ios", 'Mac' => ":osx" }
-  
 
   def applicationDidFinishLaunching(a_notification)
-    # Insert code here to initialize your application
     @depend = []
+    @podList = PodList.alloc.init
+    @podList.delegate = self
   end
 
+  #----------------------------------------
   def numberOfRowsInTableView(aTableView)
     return 0 if @depend.nil?
     return @depend.size
   end
-  
+
   def tableView(aTableView,
                 objectValueForTableColumn:aTableColumn,
                 row:rowIndex)
     return @depend[rowIndex]
-  end  
+  end
 
   def control(control,
               textShouldEndEditing:fieldEditor)
     index = tableView.editedRow
     @depend[index] = fieldEditor.string.dup
   end
-  
-  def add(sender)
-    @depend << ""
-    tableView.reloadData
-    tableView.editColumn(0, row:@depend.size - 1, withEvent:nil, select:true)
+
+  #----------------------------------------
+  def showList(sender)
+    NSApp.beginSheet(@podList.window,
+                     modalForWindow:window,
+                     modalDelegate:self,
+                     didEndSelector:nil,
+                     contextInfo:nil)
+
+    NSApp.endSheet(@podList.window)
   end
 
   def remove(sender)
     index = tableView.selectedRow
-    
+
     if index >= 0
       @depend.delete_at(index)
       tableView.reloadData
@@ -67,5 +73,12 @@ class AppDelegate
       system "open -a TextEdit '#{path}'"
     end
   end
+
+  #----------------------------------------
+  def addPod(pod)
+    @depend << pod.name.dup
+    tableView.reloadData
+  end
+
 end
 
