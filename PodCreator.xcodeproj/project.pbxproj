@@ -17,6 +17,7 @@
 		A988D41E1477DFDC00878C5C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D41D1477DFDC00878C5C /* rb_main.rb */; };
 		A988D4201477DFDC00878C5C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D41F1477DFDC00878C5C /* AppDelegate.rb */; };
 		A988D42A1477E2F100878C5C /* ButtonBarView.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D4291477E2F100878C5C /* ButtonBarView.rb */; };
+		A9E35580147937F60002A1A3 /* PodCreator.icns in Resources */ = {isa = PBXBuildFile; fileRef = A9E3557F147937F60002A1A3 /* PodCreator.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		A988D41D1477DFDC00878C5C /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		A988D41F1477DFDC00878C5C /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		A988D4291477E2F100878C5C /* ButtonBarView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ButtonBarView.rb; sourceTree = "<group>"; };
+		A9E3557F147937F60002A1A3 /* PodCreator.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PodCreator.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		A988D4181477DFDC00878C5C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				A9E3557F147937F60002A1A3 /* PodCreator.icns */,
 				A988D4191477DFDC00878C5C /* MainMenu.xib */,
 				A90E74B91478A7CC00493C4C /* PodList.xib */,
 			);
@@ -200,6 +203,7 @@
 				A988D42A1477E2F100878C5C /* ButtonBarView.rb in Resources */,
 				A90E74BB1478A7CC00493C4C /* PodList.xib in Resources */,
 				A90E74BE1478A7F700493C4C /* PodList.rb in Resources */,
+				A9E35580147937F60002A1A3 /* PodCreator.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
