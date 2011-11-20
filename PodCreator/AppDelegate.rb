@@ -17,6 +17,10 @@ class AppDelegate
     @podList.delegate = self
   end
 
+  def windowWillClose(a_notification)
+    NSApp.terminate(self)
+  end
+
   #----------------------------------------
   def numberOfRowsInTableView(aTableView)
     return 0 if @depend.nil?
