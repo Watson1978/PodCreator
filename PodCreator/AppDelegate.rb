@@ -8,29 +8,17 @@ class AppDelegate
   attr_accessor :platformButton
   attr_accessor :addButton, :removeButton, :createButton
   attr_accessor :tableView
+  attr_accessor :arrayController
 
   PLATFORM = {'iOS' => ":ios", 'Mac' => ":osx" }
 
   def applicationDidFinishLaunching(a_notification)
-    @depend = []
     @podList = PodList.alloc.init
     @podList.delegate = self
   end
 
   def windowWillClose(a_notification)
     NSApp.terminate(self)
-  end
-
-  #----------------------------------------
-  def numberOfRowsInTableView(aTableView)
-    return 0 if @depend.nil?
-    return @depend.size
-  end
-
-  def tableView(aTableView,
-                objectValueForTableColumn:aTableColumn,
-                row:rowIndex)
-    return @depend[rowIndex]
   end
 
   #----------------------------------------
@@ -45,12 +33,8 @@ class AppDelegate
   end
 
   def remove(sender)
-    index = tableView.selectedRow
-
-    if index >= 0
-      @depend.delete_at(index)
-      tableView.reloadData
-    end
+    index = arrayController.selectionIndexes
+    arrayController.removeObjectsAtArrangedObjectIndexes(index)
   end
 
   def create(sender)
@@ -64,8 +48,9 @@ class AppDelegate
 
       File.open(path, "w") {|f|
         f.puts "platform #{PLATFORM[plat]}"
-        @depend.each do |item|
-          f.puts "dependency '#{item}'"
+        ary = arrayController.arrangedObjects
+        ary.each do |item|
+          f.puts "dependency '#{item['name']}'"
         end
       }
       system "open -a TextEdit '#{path}'"
@@ -74,8 +59,7 @@ class AppDelegate
 
   #----------------------------------------
   def addPod(pod)
-    @depend << pod.name.dup
-    tableView.reloadData
+    arrayController.addObject(pod.dup)
   end
 
 end

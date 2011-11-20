@@ -6,9 +6,10 @@
 class PodList < NSWindowController
   attr_accessor :delegate
   attr_accessor :tableView
+  attr_accessor :arrayController
 
   def init
-    @pods ||= Pod::Source::search_by_name("", true)
+    @pods = Pod::Source::search_by_name("", true)
 
     super
     self.initWithWindowNibName("PodList")
@@ -17,35 +18,19 @@ class PodList < NSWindowController
   def awakeFromNib
     tableView.setTarget(self)
     tableView.setDoubleAction("selectPods:")
-  end
-
-  #----------------------------------------
-  def numberOfRowsInTableView(aTableView)
-    return 0 if @pods.nil?
-    return @pods.size
-  end
-
-  def tableView(aTableView,
-                objectValueForTableColumn:aTableColumn,
-                row:rowIndex)
-    case aTableColumn.identifier
-    when 'name'
-      @pods[rowIndex].name
-    when 'version'
-      @pods[rowIndex].versions.reverse.join(", ")
-    when 'description'
-      @pods[rowIndex].specification.summary
+    @pods.each do |pod|
+      arrayController.addObject({'name' => pod.name,
+                                  'version' => pod.versions.join(", "),
+                                  'description' => pod.specification.summary
+                                })
     end
   end
 
   #----------------------------------------
   def selectPods(sender)
-    index = tableView.selectedRow
-
-    if index >= 0
-      delegate.addPod(@pods[index])
-      self.window.orderOut(self)
-    end
+    obj = arrayController.selectedObjects.first
+    delegate.addPod(obj)
+    self.window.orderOut(self)
   end
 
 end
