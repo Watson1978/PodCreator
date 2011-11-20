@@ -33,12 +33,6 @@ class AppDelegate
     return @depend[rowIndex]
   end
 
-  def control(control,
-              textShouldEndEditing:fieldEditor)
-    index = tableView.editedRow
-    @depend[index] = fieldEditor.string.dup
-  end
-
   #----------------------------------------
   def showList(sender)
     NSApp.beginSheet(@podList.window,
