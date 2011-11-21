@@ -6,7 +6,7 @@
 class AppDelegate
   attr_accessor :window
   attr_accessor :platformButton
-  attr_accessor :addButton, :removeButton, :createButton
+  attr_accessor :bridgeSupportCheckBox
   attr_accessor :tableView
   attr_accessor :arrayController
 
@@ -52,7 +52,12 @@ class AppDelegate
         ary.each do |item|
           f.puts "dependency '#{item['name']}'"
         end
+
+        if bridgeSupportCheckBox.state == NSOnState
+          f.puts "generate_bridge_support!"
+        end
       }
+
       system "open -a TextEdit '#{path}'"
     end
   end
