@@ -17,11 +17,13 @@ module Spec
         h[item] = eval("pod.specification.#{item}") || ""
       end
 
-      author = []
+      authors = []
       h['authors'].keys.each do |k|
-        author << "#{k} : #{h['authors'][k]}"
+        author  = k
+        author += " <#{h['authors'][k]}>" if h['authors'][k]
+        authors << author
       end
-      h['authors'] = author.join(', ')
+      h['authors'] = authors.join(', ')
 
       result << h
     end
