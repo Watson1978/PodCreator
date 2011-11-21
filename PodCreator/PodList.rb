@@ -45,7 +45,7 @@ class PodList < NSWindowController
     tableView.setTarget(self)
     tableView.setDoubleAction("selectPods:")
     @pods.each do |pod|
-      arrayController.addObjects(@pods)
+      arrayController.addObject(pod)
     end
   end
 
