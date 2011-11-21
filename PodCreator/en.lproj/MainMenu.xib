@@ -377,7 +377,7 @@
 														<string key="NSFrame">{{27, -1}, {28, 22}}</string>
 														<reference key="NSSuperview" ref="2004657"/>
 														<reference key="NSWindow"/>
-														<reference key="NSNextKeyView" ref="846705897"/>
+														<reference key="NSNextKeyView" ref="554527207"/>
 														<string key="NSReuseIdentifierKey">_NS:2466</string>
 														<bool key="NSEnabled">YES</bool>
 														<object class="NSButtonCell" key="NSCell" id="859494733">
@@ -701,7 +701,7 @@
 												<reference key="NSContentView" ref="951650354"/>
 												<bytes key="NSScrollAmts">QSAAAEEgAABBmAAAQZgAAA</bytes>
 											</object>
-											<object class="NSButton" id="846705897">
+											<object class="NSButton" id="554527207">
 												<reference key="NSNextResponder" ref="623156592"/>
 												<int key="NSvFlags">294</int>
 												<string key="NSFrame">{{15, 67}, {332, 18}}</string>
@@ -710,7 +710,7 @@
 												<reference key="NSNextKeyView" ref="1062292860"/>
 												<string key="NSReuseIdentifierKey">_NS:771</string>
 												<bool key="NSEnabled">YES</bool>
-												<object class="NSButtonCell" key="NSCell" id="395616824">
+												<object class="NSButtonCell" key="NSCell" id="251196655">
 													<int key="NSCellFlags">67239424</int>
 													<int key="NSCellFlags2">0</int>
 													<string key="NSContents">Generate BridgeSupport  (for MacRuby, Nu, JSCocoa)</string>
@@ -720,7 +720,7 @@
 														<int key="NSfFlags">16</int>
 													</object>
 													<string key="NSCellIdentifier">_NS:771</string>
-													<reference key="NSControlView" ref="846705897"/>
+													<reference key="NSControlView" ref="554527207"/>
 													<int key="NSButtonFlags">1211912703</int>
 													<int key="NSButtonFlags2">2</int>
 													<object class="NSCustomResource" key="NSNormalImage">
@@ -1178,28 +1178,12 @@
 					<int key="connectionID">634</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">removeButton</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="794651070"/>
-					</object>
-					<int key="connectionID">639</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
 						<string key="label">remove:</string>
 						<reference key="source" ref="976324537"/>
 						<reference key="destination" ref="794651070"/>
 					</object>
 					<int key="connectionID">626</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">addButton</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="37546187"/>
-					</object>
-					<int key="connectionID">638</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBActionConnection" key="connection">
@@ -1216,14 +1200,6 @@
 						<reference key="destination" ref="1062292860"/>
 					</object>
 					<int key="connectionID">627</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">createButton</string>
-						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="1062292860"/>
-					</object>
-					<int key="connectionID">640</int>
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
@@ -1245,7 +1221,7 @@
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">bridgeSupportCheckBox</string>
 						<reference key="source" ref="976324537"/>
-						<reference key="destination" ref="846705897"/>
+						<reference key="destination" ref="554527207"/>
 					</object>
 					<int key="connectionID">698</int>
 				</object>
@@ -1927,7 +1903,7 @@
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<reference ref="679156467"/>
 							<reference ref="1062292860"/>
-							<reference ref="846705897"/>
+							<reference ref="554527207"/>
 							<reference ref="44058425"/>
 							<reference ref="2004657"/>
 							<reference ref="444247504"/>
@@ -2084,17 +2060,17 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">696</int>
-						<reference key="object" ref="846705897"/>
+						<reference key="object" ref="554527207"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="395616824"/>
+							<reference ref="251196655"/>
 						</object>
 						<reference key="parent" ref="623156592"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">697</int>
-						<reference key="object" ref="395616824"/>
-						<reference key="parent" ref="846705897"/>
+						<reference key="object" ref="251196655"/>
+						<reference key="parent" ref="554527207"/>
 					</object>
 				</object>
 			</object>
