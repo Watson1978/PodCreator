@@ -440,7 +440,6 @@
 												<int key="NSvFlags">294</int>
 												<string key="NSFrame">{{17, 16}, {368, 33}}</string>
 												<reference key="NSSuperview" ref="623156592"/>
-												<reference key="NSNextKeyView"/>
 												<string key="NSReuseIdentifierKey">_NS:2466</string>
 												<bool key="NSEnabled">YES</bool>
 												<object class="NSButtonCell" key="NSCell" id="362349492">
