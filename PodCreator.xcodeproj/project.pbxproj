@@ -17,6 +17,8 @@
 		A988D41E1477DFDC00878C5C /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D41D1477DFDC00878C5C /* rb_main.rb */; };
 		A988D4201477DFDC00878C5C /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D41F1477DFDC00878C5C /* AppDelegate.rb */; };
 		A988D42A1477E2F100878C5C /* ButtonBarView.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D4291477E2F100878C5C /* ButtonBarView.rb */; };
+		A994BFA1147BC00900994C85 /* PodSpec.rb in Resources */ = {isa = PBXBuildFile; fileRef = A994BFA0147BC00900994C85 /* PodSpec.rb */; };
+		A994BFA3147BC04F00994C85 /* PodFile.rb in Resources */ = {isa = PBXBuildFile; fileRef = A994BFA2147BC04F00994C85 /* PodFile.rb */; };
 		A9E35580147937F60002A1A3 /* PodCreator.icns in Resources */ = {isa = PBXBuildFile; fileRef = A9E3557F147937F60002A1A3 /* PodCreator.icns */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +46,8 @@
 		A988D41D1477DFDC00878C5C /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		A988D41F1477DFDC00878C5C /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
 		A988D4291477E2F100878C5C /* ButtonBarView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ButtonBarView.rb; sourceTree = "<group>"; };
+		A994BFA0147BC00900994C85 /* PodSpec.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PodSpec.rb; sourceTree = "<group>"; };
+		A994BFA2147BC04F00994C85 /* PodFile.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PodFile.rb; sourceTree = "<group>"; };
 		A9E3557F147937F60002A1A3 /* PodCreator.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PodCreator.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,7 +95,9 @@
 			children = (
 				A988D4291477E2F100878C5C /* ButtonBarView.rb */,
 				A988D41F1477DFDC00878C5C /* AppDelegate.rb */,
+				A994BFA2147BC04F00994C85 /* PodFile.rb */,
 				A90E74BD1478A7F700493C4C /* PodList.rb */,
+				A994BFA0147BC00900994C85 /* PodSpec.rb */,
 				A988D4181477DFDC00878C5C /* Resources */,
 				A988D41C1477DFDC00878C5C /* Other Sources */,
 				A988D4101477DFDB00878C5C /* Supporting Files */,
@@ -204,6 +210,8 @@
 				A90E74BB1478A7CC00493C4C /* PodList.xib in Resources */,
 				A90E74BE1478A7F700493C4C /* PodList.rb in Resources */,
 				A9E35580147937F60002A1A3 /* PodCreator.icns in Resources */,
+				A994BFA1147BC00900994C85 /* PodSpec.rb in Resources */,
+				A994BFA3147BC04F00994C85 /* PodFile.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
