@@ -4,8 +4,6 @@
 #
 
 module Spec
-  ITEMS = ['name', 'homepage', 'description', 'version', 'authors', 'license']
-
   module_function
   def list
     result = []
@@ -13,17 +11,20 @@ module Spec
     pods = Pod::Source::search_by_name("", false)
     pods.each do |pod|
       h = {}
-      ITEMS.each do |item|
+      ['name', 'homepage', 'version', 'license'].each do |item|
         h[item] = eval("pod.specification.#{item}") || ""
       end
 
-      authors = []
-      h['authors'].keys.each do |k|
+      h['description'] = pod.specification.summary || ""
+
+      ary = []
+      authors = pod.specification.authors
+      authors.keys.each do |k|
         author  = k
-        author += " <#{h['authors'][k]}>" if h['authors'][k]
-        authors << author
+        author += " <#{authors[k]}>" if authors[k]
+        ary << author
       end
-      h['authors'] = authors.join(', ')
+      h['authors'] = ary.join(', ')
 
       result << h
     end
