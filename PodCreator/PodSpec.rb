@@ -49,7 +49,7 @@ class PodSpec
           when "source_files"
             out_specs("source_files", "source_files", content[k])
 
-          when "require_arc"
+          when "requires_arc"
             out_spec(k, content[k].to_s)
 
           when "author_mail", "repo_tag"
