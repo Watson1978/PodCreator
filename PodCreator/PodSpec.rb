@@ -27,16 +27,18 @@ class PodSpec
           case k
 
           when "author_name"
-            str  = "{ '#{content[k]}' "
-            str += "=> '#{content['author_mail']}' " if content['author_mail'].length > 0
-            str += "}"
+            if content['author_mail'] && content['author_mail'].length > 0
+              str = "{ #{make_hash_str2(content[k], content['author_mail'])} }"
+            else
+              str = "'#{content[k]}'"
+            end
             out_spec("author", str)
 
           when "repo_url"
             type = repoButton.titleOfSelectedItem
-            str  = "{ :#{type} => '#{content[k]}'"
+            str  = "{ #{make_hash_str(type, content[k])}"
             i = repoTagCombo.indexOfSelectedItem
-            str += ", :#{repoTagCombo.itemObjectValueAtIndex(i)} => '#{content['repo_tag']}'" if i >= 0
+            str += ", #{make_hash_str(repoTagCombo.itemObjectValueAtIndex(i), content['repo_tag'])}" if i >= 0
             str += " }"
             out_spec("source", str)
 
@@ -67,6 +69,14 @@ class PodSpec
     end
   end
 
+  def make_hash_str(key, value)
+    ":#{key} => '#{value}'"
+  end
+
+  def make_hash_str2(key, value)
+    "'#{key}' => '#{value}'"
+  end
+
   def out_specs(key_s, key_m, data)
     ary = data.split(',')
     if ary.size > 1
@@ -82,4 +92,3 @@ class PodSpec
   end
 
 end
-
