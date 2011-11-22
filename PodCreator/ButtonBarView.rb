@@ -28,27 +28,9 @@ class ButtonBarView < NSView
     gradientRect = NSMakeRect(rect.origin.x, rect.origin.y, rect.size.width, rect.size.height/2);
     @gradient2.drawInRect(gradientRect, angle:270)
 
-    NSColor.grayColor.set
-    # draw bottom-edge line
-    from = NSMakePoint(0, 0)
-    to   = NSMakePoint(rect.size.width, 0)    
-    NSBezierPath.strokeLineFromPoint(from, toPoint:to)  
-
-    # draw top-edge line
-    from = NSMakePoint(0, rect.size.height)
-    to   = NSMakePoint(rect.size.width, rect.size.height)    
-    NSBezierPath.strokeLineFromPoint(from, toPoint:to)  
-
-    # draw left-edge line
-    from = NSMakePoint(0, 0)
-    to   = NSMakePoint(0, rect.size.height)    
-    NSBezierPath.strokeLineFromPoint(from, toPoint:to)  
-
-    # draw right-edge line
-    from = NSMakePoint(rect.size.width, 0)
-    to   = NSMakePoint(rect.size.width, rect.size.height)    
-    NSBezierPath.strokeLineFromPoint(from, toPoint:to)  
-  
+    # draw edge
+    NSColor.lightGrayColor.set
+    NSFrameRect(rect)
   end
 end
 
