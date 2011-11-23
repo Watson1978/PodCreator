@@ -10,8 +10,6 @@ class PodFile
   attr_accessor :tableView
   attr_accessor :arrayController
 
-  PLATFORM = {'iOS' => ":ios", 'Mac' => ":osx" }
-
   def init
     @podList = PodList.alloc.init
     @podList.delegate = self
@@ -19,6 +17,9 @@ class PodFile
 
   #----------------------------------------
   def showList(sender)
+    plat = getSelectedPlatform
+    @podList.setPlatform(plat[1..-1].to_sym)
+
     NSApp.beginSheet(@podList.window,
                      modalForWindow:window,
                      modalDelegate:self,
@@ -40,10 +41,9 @@ class PodFile
                                         file:"Podfile")
     if(result == NSOKButton)
       path = panel.filename
-      plat = platformButton.titleOfSelectedItem
 
       File.open(path, "w") {|f|
-        f.puts "platform #{PLATFORM[plat]}"
+        f.puts "platform #{getSelectedPlatform}"
         ary = arrayController.arrangedObjects
         ary.each do |item|
           f.puts "dependency '#{item['name']}'"
@@ -62,4 +62,13 @@ class PodFile
   def addPod(pod)
     arrayController.addObject(pod.dup)
   end
+
+  #----------------------------------------
+  PLATFORM = {'iOS' => ":ios", 'Mac' => ":osx" }
+
+  def getSelectedPlatform
+    plat = platformButton.titleOfSelectedItem
+    PLATFORM[plat]
+  end
+
 end

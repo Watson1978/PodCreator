@@ -11,7 +11,7 @@ module Spec
     pods = Pod::Source::search_by_name("", false)
     pods.each do |pod|
       h = {}
-      ['name', 'homepage', 'version', 'license'].each do |item|
+      ['name', 'homepage', 'version', 'license', 'platform'].each do |item|
         h[item] = eval("pod.specification.#{item}") || ""
       end
 
@@ -38,6 +38,7 @@ class PodList < NSWindowController
   attr_accessor :arrayController
 
   def init
+    @platform = ""
     @pods = Spec::list
 
     super
@@ -47,16 +48,35 @@ class PodList < NSWindowController
   def awakeFromNib
     tableView.setTarget(self)
     tableView.setDoubleAction("selectPods:")
-    @pods.each do |pod|
-      arrayController.addObject(pod)
-    end
+
+    center = NSNotificationCenter.defaultCenter
+    center.addObserver(self,
+                       selector:"prepareList:",
+                       name:"NSWindowWillBeginSheetNotification",
+                       object:nil)
   end
 
   #----------------------------------------
+  def prepareList(sender)
+    obj = arrayController.arrangedObjects
+    arrayController.removeObjects(obj)
+
+    @pods.each do |pod|
+      if pod['platform'].size == 0 || pod['platform'] == @platform
+        arrayController.addObject(pod)
+      end
+    end
+  end
+
   def selectPods(sender)
     obj = arrayController.selectedObjects.first
     delegate.addPod(obj)
     self.window.orderOut(self)
+  end
+
+  #----------------------------------------
+  def setPlatform(platform)
+    @platform = platform
   end
 
 end
