@@ -437,7 +437,7 @@
 				<string key="NSName">_NSMainMenu</string>
 			</object>
 			<object class="NSWindowTemplate" id="824301203">
-				<int key="NSWindowStyleMask">15</int>
+				<int key="NSWindowStyleMask">7</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{109, 132}, {450, 531}}</string>
 				<int key="NSWTFlags">611845120</int>
@@ -445,6 +445,8 @@
 				<string key="NSWindowClass">NSWindow</string>
 				<nil key="NSViewClass"/>
 				<nil key="NSUserInterfaceItemIdentifier"/>
+				<string key="NSWindowContentMaxSize">{450, 531}</string>
+				<string key="NSWindowContentMinSize">{450, 531}</string>
 				<object class="NSView" key="NSWindowView" id="871071338">
 					<reference key="NSNextResponder"/>
 					<int key="NSvFlags">256</int>
@@ -456,7 +458,6 @@
 							<string key="NSFrame">{{-13, -10}, {476, 535}}</string>
 							<reference key="NSSuperview" ref="871071338"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView" ref="473126570"/>
 							<string key="NSReuseIdentifierKey">_NS:608</string>
 							<object class="NSMutableArray" key="NSTabViewItems">
 								<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1710,11 +1711,12 @@
 					<string key="NSReuseIdentifierKey">_NS:224</string>
 				</object>
 				<string key="NSScreenRect">{{0, 0}, {1280, 778}}</string>
-				<string key="NSMaxSize">{10000000000000, 10000000000000}</string>
+				<string key="NSMinSize">{450, 553}</string>
+				<string key="NSMaxSize">{450, 553}</string>
 				<bool key="NSWindowIsRestorable">YES</bool>
 			</object>
 			<object class="NSCustomView" id="191494592">
-				<reference key="NSNextResponder"/>
+				<nil key="NSNextResponder"/>
 				<int key="NSvFlags">256</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
@@ -2098,7 +2100,6 @@ AAEAAQAAAT0AAwAAAAEAAgAAAVIAAwAAAAEAAQAAAVMAAwAAAAIAAQABAAAAAA</bytes>
 					</object>
 				</object>
 				<string key="NSFrameSize">{300, 420}</string>
-				<reference key="NSSuperview"/>
 				<reference key="NSNextKeyView" ref="733131238"/>
 				<string key="NSClassName">NSView</string>
 			</object>
