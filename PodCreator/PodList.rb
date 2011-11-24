@@ -70,8 +70,10 @@ class PodList < NSWindowController
 
   def selectPods(sender)
     obj = arrayController.selectedObjects.first
-    delegate.addPod(obj)
-    self.window.orderOut(self)
+    if obj
+      delegate.addPod(obj)
+      self.window.orderOut(self)
+    end
   end
 
   #----------------------------------------
