@@ -6,6 +6,7 @@
 class PodSpec
   attr_accessor :repoButton
   attr_accessor :repoTagCombo
+  attr_accessor :platformButton
   attr_accessor :objectController
 
   def create(sender)
@@ -50,7 +51,7 @@ class PodSpec
 
           when "source_files"
             out_specs("source_files", "source_files", content[k])
-
+          
           when "requires_arc"
             out_spec(k, content[k].to_s)
 
@@ -62,6 +63,9 @@ class PodSpec
           end
         end
 
+        plat = PodUtil::getSelectedPlatform(platformButton.titleOfSelectedItem)
+        out_spec("platform", plat) if plat
+
         f.puts "end"
       }
 
@@ -69,6 +73,7 @@ class PodSpec
     end
   end
 
+  #----------------------------------------
   def make_hash_str(key, value)
     ":#{key} => '#{value}'"
   end
@@ -90,5 +95,4 @@ class PodSpec
   def out_spec(key, data)
     @io.puts "  s.#{key} = #{data}"
   end
-
 end

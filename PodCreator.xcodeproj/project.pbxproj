@@ -19,6 +19,7 @@
 		A988D42A1477E2F100878C5C /* ButtonBarView.rb in Resources */ = {isa = PBXBuildFile; fileRef = A988D4291477E2F100878C5C /* ButtonBarView.rb */; };
 		A994BFA1147BC00900994C85 /* PodSpec.rb in Resources */ = {isa = PBXBuildFile; fileRef = A994BFA0147BC00900994C85 /* PodSpec.rb */; };
 		A994BFA3147BC04F00994C85 /* PodFile.rb in Resources */ = {isa = PBXBuildFile; fileRef = A994BFA2147BC04F00994C85 /* PodFile.rb */; };
+		A9B73E88147F719F007573B0 /* PodUtil.rb in Resources */ = {isa = PBXBuildFile; fileRef = A9B73E87147F719F007573B0 /* PodUtil.rb */; };
 		A9E35580147937F60002A1A3 /* PodCreator.icns in Resources */ = {isa = PBXBuildFile; fileRef = A9E3557F147937F60002A1A3 /* PodCreator.icns */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		A988D4291477E2F100878C5C /* ButtonBarView.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ButtonBarView.rb; sourceTree = "<group>"; };
 		A994BFA0147BC00900994C85 /* PodSpec.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PodSpec.rb; sourceTree = "<group>"; };
 		A994BFA2147BC04F00994C85 /* PodFile.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PodFile.rb; sourceTree = "<group>"; };
+		A9B73E87147F719F007573B0 /* PodUtil.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = PodUtil.rb; sourceTree = "<group>"; };
 		A9E3557F147937F60002A1A3 /* PodCreator.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = PodCreator.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				A994BFA2147BC04F00994C85 /* PodFile.rb */,
 				A90E74BD1478A7F700493C4C /* PodList.rb */,
 				A994BFA0147BC00900994C85 /* PodSpec.rb */,
+				A9B73E87147F719F007573B0 /* PodUtil.rb */,
 				A988D4181477DFDC00878C5C /* Resources */,
 				A988D41C1477DFDC00878C5C /* Other Sources */,
 				A988D4101477DFDB00878C5C /* Supporting Files */,
@@ -212,6 +215,7 @@
 				A9E35580147937F60002A1A3 /* PodCreator.icns in Resources */,
 				A994BFA1147BC00900994C85 /* PodSpec.rb in Resources */,
 				A994BFA3147BC04F00994C85 /* PodFile.rb in Resources */,
+				A9B73E88147F719F007573B0 /* PodUtil.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

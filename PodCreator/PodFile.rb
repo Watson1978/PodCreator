@@ -17,7 +17,7 @@ class PodFile
 
   #----------------------------------------
   def showList(sender)
-    plat = getSelectedPlatform
+    plat = PodUtil::getSelectedPlatform(platformButton.titleOfSelectedItem)
     @podList.setPlatform(plat[1..-1].to_sym)
 
     NSApp.beginSheet(@podList.window,
@@ -43,7 +43,8 @@ class PodFile
       path = panel.filename
 
       File.open(path, "w") {|f|
-        f.puts "platform #{getSelectedPlatform}"
+        plat = PodUtil::getSelectedPlatform(platformButton.titleOfSelectedItem)
+        f.puts "platform #{plat}"
         ary = arrayController.arrangedObjects
         ary.each do |item|
           f.puts "dependency '#{item['name']}'"
@@ -62,13 +63,4 @@ class PodFile
   def addPod(pod)
     arrayController.addObject(pod.dup)
   end
-
-  #----------------------------------------
-  PLATFORM = {'iOS' => ":ios", 'Mac' => ":osx" }
-
-  def getSelectedPlatform
-    plat = platformButton.titleOfSelectedItem
-    PLATFORM[plat]
-  end
-
 end
