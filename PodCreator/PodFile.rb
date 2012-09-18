@@ -47,7 +47,7 @@ class PodFile
         f.puts "platform #{plat}"
         ary = arrayController.arrangedObjects
         ary.each do |item|
-          f.puts "dependency '#{item['name']}'"
+          f.puts "pod '#{item['name']}'"
         end
 
         if bridgeSupportCheckBox.state == NSOnState
