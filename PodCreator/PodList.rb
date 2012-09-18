@@ -33,8 +33,11 @@ class PodList < NSWindowController
     arrayController.removeObjects(obj)
 
     @pods.each do |pod|
-      if pod['platform'].size == 0 || pod['platform'] == @platform
-        arrayController.addObject(pod)
+      begin
+        if pod['platform'] == @platform || pod['platform'].empty?
+          arrayController.addObject(pod)
+        end
+      rescue
       end
     end
   end
